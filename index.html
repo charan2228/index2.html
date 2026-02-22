@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sai Sri Charan — Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:Poppins,sans-serif}
+
+body{
+background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+color:white;overflow-x:hidden
+}
+
+/* FLOATING NAVBAR */
+nav{
+position:fixed;top:20px;left:50%;
+transform:translateX(-50%);
+background:rgba(255,255,255,0.1);
+backdrop-filter:blur(12px);
+padding:14px 30px;border-radius:40px;
+display:flex;gap:20px;z-index:1000
+}
+nav a{color:white;text-decoration:none;font-size:14px}
+
+/* HERO */
+header{
+height:100vh;
+display:flex;flex-direction:column;
+align-items:center;justify-content:center;
+text-align:center
+}
+.profile{
+width:170px;height:170px;border-radius:50%;
+object-fit:cover;margin-bottom:20px
+}
+.typing{color:#ffcc70;font-size:1.3rem;height:30px}
+
+/* SECTIONS */
+section{padding:90px 8%;max-width:1100px;margin:auto}
+h2{border-bottom:2px solid #ffcc70;margin-bottom:30px}
+
+/* CARD GRID */
+.card-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:25px;
+}
+
+.card{
+background:rgba(255,255,255,0.08);
+backdrop-filter:blur(12px);
+padding:22px;border-radius:18px;
+transition:.3s;
+box-shadow:0 8px 20px rgba(0,0,0,0.25);
+}
+.card:hover{transform:translateY(-10px)}
+
+.card h3{color:#ffcc70;margin-bottom:10px}
+.card span{display:block;margin-top:10px;font-size:13px;opacity:.8}
+
+/* CONTACT */
+input,textarea{
+width:100%;padding:16px;margin:12px 0;
+border-radius:12px;border:none;background:#ddd;color:black
+}
+button{
+width:100%;padding:16px;background:#2f8cff;
+border:none;border-radius:12px;color:white;font-weight:600
+}
+
+/* SOCIAL */
+.social img{width:36px;margin:0 12px}
+
+/* CURSOR */
+.cursor{
+width:18px;height:18px;border:2px solid #ffcc70;
+border-radius:50%;position:fixed;pointer-events:none
+}
+</style>
+</head>
+
+<body>
+
+<div class="cursor" id="cursor"></div>
+
+<nav>
+<a href="#education">Education</a>
+<a href="#certifications">Certifications</a>
+<a href="#projects">Projects</a>
+<a href="#experience">Experience</a>
+<a href="#achievements">Achievements</a>
+<a href="#contact">Contact</a>
+</nav>
+
+<!-- HERO -->
+<header>
+<img src="images/myphoto.jpg" class="profile">
+<h1>Sai Sri Charan Yerramsetty</h1>
+<div class="typing" id="typing"></div>
+
+<div class="social">
+<a href="https://www.linkedin.com/in/charan-yerramsetty"><img src="https://cdn-icons-png.flaticon.com/512/174/174857.png"></a>
+<a href="https://github.com/charan2228"><img src="https://cdn-icons-png.flaticon.com/512/733/733553.png"></a>
+</div>
+</header>
+
+<!-- EDUCATION -->
+<section id="education">
+<h2>Education</h2>
+<div class="card-grid">
+
+<div class="card">
+<h3>B.Tech CSE</h3>
+<p>GITAM University</p>
+<span>CGPA: 7.2</span>
+</div>
+
+<div class="card">
+<h3>Intermediate (MPC)</h3>
+<p>Sri Chaitanya College</p>
+<span>75.1%</span>
+</div>
+
+<div class="card">
+<h3>SSC</h3>
+<p>Jubilee Hills Public School</p>
+<span>65.9%</span>
+</div>
+
+</div>
+</section>
+
+<!-- CERTIFICATIONS -->
+<section id="certifications">
+<h2>Certifications</h2>
+<div class="card-grid">
+
+<div class="card"><h3>ReactJS</h3><span>Wingspan</span></div>
+<div class="card"><h3>HTML</h3><span>Great Learning</span></div>
+<div class="card"><h3>Data Structures in C++</h3><span>Great Learning</span></div>
+<div class="card"><h3>Python Essentials 2</h3><span>Cisco</span></div>
+<div class="card"><h3>Cybersecurity</h3><span>Cisco</span></div>
+
+</div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+<h2>Projects</h2>
+<div class="card-grid">
+
+<div class="card">
+<h3>MFA Authentication System</h3>
+<p>Secure multi-factor authentication system optimizing storage usage.</p>
+</div>
+
+<div class="card">
+<h3>Flashcard Quiz App</h3>
+<p>Interactive learning app using dynamic flashcards.</p>
+</div>
+
+<div class="card">
+<h3>Random Quote Generator</h3>
+<p>Web app generating random motivational quotes.</p>
+</div>
+
+</div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience">
+<h2>Experience</h2>
+
+<div class="card-grid">
+
+<div class="card">
+<h3>Gwing Technologies — Web Development Intern</h3>
+<span>May – June 2025</span>
+<p>
+Worked on real-time frontend projects using HTML, CSS, and JavaScript.  
+Improved accessibility and visual consistency across pages and collaborated using Git in an Agile environment.
+</p>
+</div>
+
+<div class="card">
+<h3>CodeAlpha — App Development Intern</h3>
+<span>June – July 2025</span>
+<p>
+Developed mobile and web applications including quiz and utility apps.  
+Enhanced UI responsiveness, debugging, and testing for performance improvements.
+</p>
+</div>
+
+<div class="card">
+<h3>CodeAlpha — Cyber Security Intern</h3>
+<span>July – August 2025</span>
+<p>
+Performed network sniffing, vulnerability analysis, and phishing awareness tasks.  
+Worked on intrusion detection setup and secure coding practices.
+</p>
+</div>
+
+<div class="card">
+<h3>President — Film Maker Club, GITAM University</h3>
+<span>2024 – Present</span>
+<p>
+Led club activities, events, and workshops while coordinating teams for creative productions.  
+Managed planning and execution of university-level events.
+</p>
+</div>
+
+</div>
+</section>
+<!-- ACHIEVEMENTS -->
+<section id="achievements">
+<h2>Achievements</h2>
+<div class="card-grid">
+
+<div class="card"><h3>President — Film Maker Club</h3></div>
+<div class="card"><h3>Football Player — College Team</h3></div>
+
+</div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" style="text-align:center">
+<h2>Contact Me</h2>
+
+<form style="max-width:500px;margin:auto">
+<input type="text" placeholder="Your Name">
+<input type="email" placeholder="Your Email">
+<textarea placeholder="Your Message" rows="5"></textarea>
+<button type="submit">Submit</button>
+</form>
+
+<p style="margin-top:40px;font-size:18px;opacity:.8">
+"Keep pushing your limits — greatness lives beyond comfort."
+</p>
+
+</section>
+
+<script>
+/* TYPING */
+const text=["Developer","Cyber Security Intern","President","Football Player"];
+let i=0,j=0,current="",isDeleting=false;
+
+function type(){
+current=text[i];
+document.getElementById("typing").textContent=current.substring(0,j);
+if(!isDeleting && j<current.length) j++;
+else if(isDeleting && j>0) j--;
+else{
+isDeleting=!isDeleting;
+if(!isDeleting) i=(i+1)%text.length;
+}
+setTimeout(type,isDeleting?40:80);
+}
+type();
+
+/* CURSOR */
+const cursor=document.getElementById('cursor');
+document.addEventListener('mousemove',e=>{
+cursor.style.top=e.clientY+'px';
+cursor.style.left=e.clientX+'px';
+});
+</script>
+
+</body>
+</html>
